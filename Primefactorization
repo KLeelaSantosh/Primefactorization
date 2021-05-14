@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+Using namespace std;
+void primeFactors(int r) 
+{ 
+    // Print the number of 2s that divide n 
+while (r% 2 == 0) 
+    { 
+Cout<< 2 << “ “; 
+    r = r/2; 
+   } 
+for (int I = 3; I <= sqrt(r); I = I + 2) 
+ { 
+  while (r % I == 0) 
+ { 
+Cout<< I << “ “; 
+  r = r/I; 
+    } 
+    } 
+   // is a prime number greater than 2 
+    If (r > 2) 
+Cout<< r << “ “; 
+} 
+/* Driver code */
+int main() 
+{ 
+int r = 315; 
+primeFactors(r); 
+return 0; 
+}
